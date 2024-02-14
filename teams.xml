@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Teams xmlns="https://localhost/racing/teams">
+	<Team tid="T001" cars="C001 C002">
+		<Team_Title>Team 1</Team_Title>
+		<Description> This is Team 1</Description>
+		<Series>Series 1</Series>
+	</Team>
+	<Team tid="T002" cars="C002">
+		<Team_Title>Team 2</Team_Title>
+		<Description>This is Team 2</Description>
+		<Series>Series 1</Series>
+	</Team>
+</Teams>

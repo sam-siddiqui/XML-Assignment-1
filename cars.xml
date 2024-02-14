@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Cars xmlns="https://localhost/racing/cars">
+	<Car cid="C001" team="T001">
+		<Car_Title>Red Bull Racing RB18</Car_Title>
+		<Model>2018</Model>
+		<Driver>Max Verstappen</Driver>
+	</Car>
+	<Car cid="C002" team="T001 T002">
+		<Car_Title>Ferrari F2004</Car_Title>
+		<Model>2004</Model>
+		<Driver>Michael Schumacher</Driver>
+	</Car>
+</Cars>

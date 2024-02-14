@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Racing [
+
+<!ELEMENT Racing (Teams,Cars)>
+<!ATTLIST Racing
+	xmlns CDATA #FIXED "https://localhost/racing"
+>
+<!ELEMENT Teams (Team+)>
+<!ELEMENT Team (Team_Title, Description, Series)>
+<!ATTLIST Teams
+	xmlns CDATA #FIXED "https://localhost/racing/teams"
+>
+<!ATTLIST Team
+	tid CDATA #REQUIRED
+	cars CDATA #REQUIRED
+> 
+
+<!ELEMENT Team_Title (#PCDATA)>
+<!ELEMENT Series (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT Car (Car_Title, Model, Driver)>
+<!ATTLIST Cars
+	xmlns CDATA #FIXED "https://localhost/racing/cars"
+>
+<!ATTLIST Car
+	cid CDATA #REQUIRED
+	team CDATA #REQUIRED
+>
+<!ELEMENT Cars (Car+)>
+
+<!ELEMENT Car_Title (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Driver (#PCDATA)>
+
+	
+	<!ENTITY teams SYSTEM "teams.xml"> 
+	<!ENTITY cars SYSTEM "cars.xml"> 
+]>
+<Racing xmlns="https://localhost/racing">
+	&teams; 
+	&cars;
+</Racing> 
